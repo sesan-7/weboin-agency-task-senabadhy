@@ -7,7 +7,7 @@ import { SmoothScrollLink } from "@/components/layout/smooth-scroll-link";
 export default function Hero() {
     return (
         <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-background">
-            {/* Background Designs*/}
+            {/* Background Design*/}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_100%)] opacity-[0.02] dark:opacity-[0.04] pointer-events-none" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-full blur-[120px] opacity-50 z-0 pointer-events-none" />
 
