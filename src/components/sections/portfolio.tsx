@@ -51,15 +51,16 @@ export default function Portfolio() {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-8 backdrop-blur-[2px]">
-                                    <div className="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out delay-75">
-                                        <div className="flex items-center justify-between mb-3">
+                                {/* Overlay: always visible on mobile/tablet; hover-only on desktop */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-6 md:p-8 backdrop-blur-[2px]">
+                                    <div className="transform translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 ease-out delay-75">
+                                        <div className="flex items-center justify-between mb-2 md:mb-3">
                                             <p className="text-white/80 font-mono text-xs uppercase tracking-[0.15em]">{project.category}</p>
-                                            <span className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center bg-white/10 backdrop-blur-md text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
-                                                <ArrowUpRight className="w-5 h-5" />
+                                            <span className="w-9 h-9 md:w-10 md:h-10 rounded-full border border-white/20 flex items-center justify-center bg-white/10 backdrop-blur-md text-white md:group-hover:bg-white md:group-hover:text-black transition-colors duration-300">
+                                                <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
                                             </span>
                                         </div>
-                                        <h3 className="text-white text-2xl font-bold tracking-tight">
+                                        <h3 className="text-white text-xl md:text-2xl font-bold tracking-tight leading-snug">
                                             {project.title}
                                         </h3>
                                     </div>
