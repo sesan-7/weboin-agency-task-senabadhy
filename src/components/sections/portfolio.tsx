@@ -51,7 +51,7 @@ export default function Portfolio() {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
 
-                                {/* Overlay: always visible on mobile/tablet; hover-only on desktop */}
+
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-6 md:p-8 backdrop-blur-[2px]">
                                     <div className="transform translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 ease-out delay-75">
                                         <div className="flex items-center justify-between mb-2 md:mb-3">
