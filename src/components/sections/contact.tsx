@@ -13,7 +13,7 @@ export default function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        //API call
+
         await new Promise((resolve) => setTimeout(resolve, 1500));
 
         setIsSubmitting(false);
